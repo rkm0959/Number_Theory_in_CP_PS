@@ -13,13 +13,13 @@ ll gcd(ll a, ll b)
 	return gcd(b, a%b);
 }
 
-ll minv(ll a, ll b) // ax == 1 (mod b)
+ll minv(ll a, ll b) // ax == 1 (mod b), assumes gcd(a, b) = 1
 {
 	if(a==1) return 1; // a = 1
 	return b - minv(b%a, a) * b / a;
 }
 
-void solve(ll a, ll b, ll c) // solve ax == b (mod c)
+void solve(ll a, ll b, ll c) // solve ax == b (mod c), assumes a, c > 0, b >= 0
 {
 	ll g = gcd(a, c);
 	if(b%g!=0)
