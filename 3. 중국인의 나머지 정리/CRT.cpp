@@ -23,6 +23,7 @@ ll minv(ll a, ll b)
 // x == B.first (mod B.second)
 // returns solution as X == ans.first (mod ans.second)
 // if no solution, returns (-1, -1)
+// always a good idea to keep 0 <= ?.first < ?.second (for ? : A, B, ans)
 pair<ll, ll> solve(pair<ll, ll> A, pair<ll, ll> B)
 {
 	ll g = gcd(A.second, B.second); // gcd
