@@ -6,7 +6,7 @@ typedef unsigned long long int ull;
 typedef long double ldb;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-ll gcd(ll a, ll b)
+ll gcd(ll a, ll b) // inputs should be nonnegative
 {
 	if(a==0) return b; // a = 0
 	if(b==0) return a; // b = 0
