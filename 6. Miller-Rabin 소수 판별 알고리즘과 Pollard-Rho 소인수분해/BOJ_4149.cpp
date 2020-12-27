@@ -6,6 +6,9 @@ typedef unsigned long long int ull;
 typedef long double ldb;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
+// a lot of code chunks are taken from 
+// https://github.com/encrypted-def/BOJ/blob/master/4149.cpp
+
 vector<ll> res;
 
 ll gcd(ll x, ll y)
