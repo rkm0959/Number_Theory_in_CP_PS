@@ -74,6 +74,7 @@ pair<ll, ll> factorial_p(ll n)
 	ll m = V.second;
 	m = (m * exp(fac[p-1], k, p)) % p; // note : fac[p-1] == -1 (mod p)
 	// therefore, to save time, we can do m = (k % 2 == 0 ? m : (p-m)); instead
+	// or, we can simply use k % 2 instead of k as an argument in exp
 	m = (m * fac[r]) % p;
 	return make_pair(e, m);
 }
