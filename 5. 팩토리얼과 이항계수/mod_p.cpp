@@ -69,9 +69,9 @@ pair<ll, ll> factorial_p(ll n)
 {
 	if(n<p) return make_pair(0, fac[n]); 
 	ll k = n/p; ll r = n%p;
-	pair<ll, ll> val = factorial_p(k);
-	ll e = val.first + k;
-	ll m = val.second;
+	pair<ll, ll> V = factorial_p(k);
+	ll e = V.first + k;
+	ll m = V.second;
 	m = (m * exp(fac[p-1], k, p)) % p; // note : fac[p-1] == -1 (mod p)
 	// therefore, to save time, we can do m = (k % 2 == 0 ? m : (p-m)); instead
 	m = (m * fac[r]) % p;
