@@ -18,6 +18,7 @@ void quick_factorize(int n) // logarithmic time, after sieve
 	while(n!=1)
 	{
 		int p=fpr[n]; n/=p;
+		// while(n % p == 0) n /= p; is possible of course
 		cout << "Found Prime Divisor " << p << "\n";
 		// save these values in a data structure, if needed
 	}
