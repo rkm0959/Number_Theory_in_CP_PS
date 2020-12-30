@@ -2,7 +2,7 @@
 
 블로그 링크 : https://rkm0959.tistory.com/186
 
-부록 링크 : https://rkm0959.tistory.com/187
+부록 링크 : https://rkm0959.tistory.com/184
 
 sieve_mobius : 에라토스테네스의 체를 이용한 mobius function 전처리
 
