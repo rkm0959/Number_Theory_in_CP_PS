@@ -10,3 +10,4 @@ modular_sqrt_power_of_2 : 2의 거듭제곱에 대한 modular square root 계산
 
 modular_sqrt_power_odd_prime : 홀수 소수의 거듭제곱에 대한 modular square root 계산 알고리즘
 
+The implementation of Pohlig-Hellman Algorithm is left as an exercise to the reader.
