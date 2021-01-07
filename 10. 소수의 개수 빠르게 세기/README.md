@@ -1,5 +1,7 @@
 # 소수의 개수 빠르게 세기
 
+블로그 링크 : https://rkm0959.tistory.com/189
+
 Lucy_Hedgehog : `n` 이하의 소수의 개수, 소수의 합을 구하는 `O(n^3/4)` 구현체
 
 Meissel_Lehmer : `n` 이하의 소수의 개수를 구하는 `O(n^2/3)` 구현체
