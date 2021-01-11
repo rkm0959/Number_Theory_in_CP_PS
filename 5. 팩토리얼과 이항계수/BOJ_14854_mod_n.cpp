@@ -26,6 +26,7 @@ int exp(int x, int y, int mod)
 
 int minv(int a, int b) 
 {
+	if(a==0 && b==1) return 0;
 	if(a==1) return 1;
 	return b - (1LL * minv(b%a, a) * b) / a;
 }
