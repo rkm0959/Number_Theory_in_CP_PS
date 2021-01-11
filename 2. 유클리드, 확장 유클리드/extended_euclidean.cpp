@@ -10,6 +10,7 @@ mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
 ll minv(ll a, ll b) // ax == 1 (mod b)
 {
+	if(a==0 && b==1) return 0;
 	if(a==1) return 1; // a = 1
 	return b - minv(b%a, a) * b / a;
 }
