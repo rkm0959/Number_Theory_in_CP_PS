@@ -26,6 +26,9 @@ ll minv(ll a, ll b)
 // always a good idea to keep 0 <= ?.first < ?.second (for ? : A, B, ans)
 pair<ll, ll> solve(pair<ll, ll> A, pair<ll, ll> B)
 {
+	if(A.second == -1 || B.second == -1) return make_pair(-1, -1);
+	if(A.second == 1) return B;
+	if(B.second == 1) return A;
 	ll g = gcd(A.second, B.second); // gcd
 	ll l = A.second * (B.second / g); // lcm
 	if((B.first-A.first)%g!=0) return make_pair(-1, -1); // no solution case
