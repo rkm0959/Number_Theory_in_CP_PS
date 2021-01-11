@@ -21,6 +21,7 @@ ll exp(ll x, ll y, ll mod)
 
 ll minv(ll a, ll b) 
 {
+	if(a==0 && b==1) return 0;
 	if(a==1) return 1;
 	return b - minv(b%a, a) * b / a;
 }
