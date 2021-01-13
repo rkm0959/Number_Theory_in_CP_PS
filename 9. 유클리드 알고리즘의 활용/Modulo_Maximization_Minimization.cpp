@@ -6,9 +6,6 @@ typedef unsigned long long int ull;
 typedef long double ldb;
 mt19937 rng(chrono::steady_clock::now().time_since_epoch().count());
 
-// min_rem, max_rem code from adamant's blog
-// taken (nearly) directly from https://codeforces.com/blog/entry/73629
-
 ll ceil(ll n, ll m) { return (n+m-1)/m; }
 
 ll gcd(ll a, ll b)
